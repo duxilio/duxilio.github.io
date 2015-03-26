@@ -1,24 +1,5 @@
-$body-family: 'freight-sans-pro', Helvetica, Arial, sans-serif;
-$body-weight: 300;
-$body-line-height: 1.5em;
-
-$heading-weight: 300;
-$heading-line-height: 1.2em;
-
-$size-m: 18px;
-$xs-size-m: 16px;
-
-$base-color: #333;
-
-$gray: #fcfcfc;
-
-$brand-blue: #2eb2c4;
-$brand-blue-dark: #2f9dc3;
-$brand-deep-blue: #37509e;
-$brand-deep-blue-dark: #434394;
-
-$margin-s: .8em;
-$margin-l: 3em;
+@import "_vars";
+@import "_mixins";
 
 
 html,body {
@@ -69,6 +50,13 @@ a {
 
 	z-index: 0;
 	background-color: $gray;
+
+	opacity: 0;
+	@include transition(opacity);
+
+	&.is-faded-in {
+		opacity: 1;
+	}
 }
 
 #logo {
@@ -86,6 +74,20 @@ a {
 
 	position: relative;
 	z-index: 1;
+
+	* {
+		opacity: 0;
+
+		position: relative;
+		top: -20px;
+		transform: translateZ(0);
+		@include transition(all);
+
+		&.is-faded-in {
+			opacity: 1;
+			top: 0;
+		}
+	}
 }
 
 @media all and (max-width: 640px){

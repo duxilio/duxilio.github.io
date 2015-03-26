@@ -716,4 +716,39 @@ window.particlesJS = function(tag_id, params){
         retina_detect: true
     });
 
+    var addClass = function(el, className){
+        var classesArr = el.className.split(' ');
+        classesArr.push(className);
+        el.className = classesArr.join(' ');
+        return el;
+    };
+
+    //fade elements in on load
+    (function(){
+        var addClassToEl = (function(){
+
+            var count = 0;
+
+            return function(el, className){
+                setTimeout(function(){
+                    addClass(el, className);
+                }, count*150);
+
+                count++;
+                return el;
+            };
+        }());
+
+        var particlesWrapper = document.getElementById('particles-js'),
+            allContentEls = document.getElementById('content-container').getElementsByTagName('*');
+
+        addClassToEl(particlesWrapper, 'is-faded-in');
+
+        for(var i = 0, l = allContentEls.length; i < l; i++){
+            var el = allContentEls[i];
+            addClassToEl(el, 'is-faded-in');
+        }
+
+    }());
+
 }());

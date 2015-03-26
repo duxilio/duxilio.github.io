@@ -12,8 +12,7 @@ module.exports = function (grunt){
                 livereload: true,
                 hostname: '0.0.0.0',
                 port: 9000,
-                base: '<%= webRoot %>/',
-                open: true
+                base: '<%= webRoot %>/'
             }
         }
     },
@@ -32,7 +31,7 @@ module.exports = function (grunt){
         },
         sass: {
             files: ['<%= devRoot %>/sass/**/*.scss'],
-            tasks: ['sass']
+            tasks: ['css']
         }
     },
 
@@ -72,6 +71,18 @@ module.exports = function (grunt){
             '<%= webRoot %>/css/main.css': '<%= devRoot %>/sass/main.scss'
           }
         }
+    },
+
+    autoprefixer: {
+      options: {
+        expand: true,
+        flatten: true,
+        browsers: ['last 20 versions', 'ie 8', 'ie 9'],
+      },
+      all: {
+        src: '<%= webRoot %>/css/main.css',
+        dest: '<%= webRoot %>/css/main.css'
+      }
     },
 
     jshint: {
@@ -117,7 +128,9 @@ module.exports = function (grunt){
 
  require('load-grunt-tasks')(grunt);
 
+ grunt.registerTask('css', ['sass', 'autoprefixer']);
+
  grunt.registerTask('default', ['connect', 'watch']);
- grunt.registerTask('build', ['jade', 'sass', 'jshint', 'uglify']);
+ grunt.registerTask('build', ['jade', 'css', 'jshint', 'uglify']);
 
 }
