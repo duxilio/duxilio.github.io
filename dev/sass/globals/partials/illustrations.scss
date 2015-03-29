@@ -1,10 +1,15 @@
-.logo {
+.logo, .socialhack-logo {
     max-width: 110px;
     margin: 0 auto;
 
     img {
         width: 100%;
     }
+}
+
+.socialhack-logo {
+    max-width: 240px;
+    margin-bottom: -40px;
 }
 
 .rocket {
