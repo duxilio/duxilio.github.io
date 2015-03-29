@@ -1,0 +1,22 @@
+mixin star-sky
+    .star-sky
+        - var rand = function(min, max){ return Math.floor((Math.random() * max) + min); };
+        - for(var i = 0; i < 15; i++)
+            - var size = rand(10, 20);
+            .star(style="width:"+size+"px; height:"+size+"px;top:"+rand(20, 960)+"px;left:"+rand(20, 960)+"px;")
+
+mixin bullets-v
+    ul.bullets
+        li
+        li.m
+        li.l
+
+mixin profile-item(src, name, profession, email)
+    .profile-item
+        .avatar
+            img(src="/img/team/#{src}.jpeg")
+        h6.profile-item__title #{name}
+        small #{profession}
+        hr
+        a(href="mailto:#{email}")
+            small #{email}

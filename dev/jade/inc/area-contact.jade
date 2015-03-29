@@ -1,35 +1,16 @@
-.push-area
+.push-area.area-contact
+    +star-sky
     .container
 
         .row
-            .profile-item
-                .avatar
-                    img(src="/img/team/robertvanhaaren.jpeg")
-                h6.profile-item__title Robert van Haaren
-                small Creative Director
-                hr
-                a(href="mailto:robert@duxilio.nl")
-                    small robert@duxilio.com
+            +profile-item('robertvanhaaren', 'Robert van Haaren', 'Creative Director', 'robert@duxilio.nl')
+            +profile-item('koenvendrik', 'Koen Vendrik', 'Lead Front-end', 'koen@duxilio.nl')
+            +profile-item('mattivandeweem', 'Matti van de Weem', 'Lead Back-end', 'matti@duxilio.nl')
 
-            .profile-item
-                .avatar
-                    img(src="/img/team/koenvendrik.jpeg")
-                h6.profile-item__title Koen Vendrik
-                small Lead Front-end
-                hr
-                a(href="mailto:koen@duxilio.nl")
-                    small koen@duxilio.com
-
-            .profile-item
-                .avatar
-                    img(src="/img/team/mattivandeweem.jpeg")
-                h6.profile-item__title Matti van de Weem
-                small Lead Back-end
-                hr
-                a(href="mailto:matti@duxilio.nl")
-                    small matti@duxilio.com
-
-        .row(style="margin-top: 80px;")
+        .row.row--push
+            a(href="mailto:hello@duxilio.com") hello@duxilio.com
+            |  | 
+            a(href="tel:+31 6 57 35 72 46") +31 6 57 35 72 46
             ul.social
                 a(href="http://twitter.com")
                     li.ss-icon.ss-social-regular twitter

@@ -1,0 +1,42 @@
+@include media($max-width: 768px){
+
+    .container {
+        width: 90%;
+    }
+
+    .profile-item {
+        width: 100%;
+        max-width: 277px;
+
+        margin: 0 auto;
+        margin-bottom: $margin-m;
+
+        text-align: left;
+
+        hr {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        .avatar {
+            width: 80px;
+            height: 80px;
+            border-width: 5px;
+            float: left;
+            margin-right: $margin-m;
+        }
+    }
+
+    .row--push {
+        margin-top: $margin-m;
+    }
+
+}
+
+@include media(768px, 960px){
+
+    .container {
+        width: 750px;
+    }
+
+}

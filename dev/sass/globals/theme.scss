@@ -4,14 +4,12 @@
 }
 
 .star-sky {
-    width: 960px;
-
     position: absolute;
     top: 0;
     left: 50%;
     right: 0;
     bottom: 0;
-    z-index: 0;
+    z-index: -1;
 
     margin-left: -480px;
 
@@ -23,12 +21,19 @@
     }
 }
 
-.content-wrapper {
-    position: relative;
-    z-index: 1;
-}
-
 .row {
     width: 100%;
     overflow: hidden;
+}
+
+.row--push {
+    margin-top: $margin-xl;
+}
+
+.push-area.area-intro {
+    padding-top: $margin-xl;
+}
+
+.push-area.area-contact {
+    padding-bottom: $margin-l;
 }

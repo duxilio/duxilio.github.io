@@ -1,6 +1,10 @@
 .logo {
     max-width: 110px;
     margin: 0 auto;
+
+    img {
+        width: 100%;
+    }
 }
 
 .rocket {
@@ -8,7 +12,45 @@
     line-height: 0;
 
     margin: 0 auto;
+    margin-bottom: -86px;
 
     position: relative;
     left: -60px;
+}
+
+.clouds {
+    width: 100%;
+    min-width: 1200px;
+    height: 86px;
+    position: relative;
+
+    &.clouds--top {
+        background: url('/img/clouds/clouds-top.svg');
+
+        &:before {
+            background: url('/img/clouds/clouds-top.svg');
+            background-position: 310px 0;
+        }
+    }
+
+    &.clouds--bottom {
+        background: url('/img/clouds/clouds-btm.svg');
+        background-position: 400px 0;
+
+        &:before {
+            background: url('/img/clouds/clouds-btm.svg');
+            height: 80px;
+            top: auto;
+        }
+    }
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: -10px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: .1;
+    }
 }

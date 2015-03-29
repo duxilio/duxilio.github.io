@@ -1,3 +1,5 @@
+include inc/_mixins
+
 doctype html
 html(lang="en")
 
@@ -29,28 +31,31 @@ html(lang="en")
     meta(name="twitter:description" content="Software that makes life less complicated")
     meta(name="twitter:image" content="http://duxilio.nl/img/duxilio-og.png")
 
-    link(rel="shortcut icon" href="/assets/favicons/favicon.ico")
-    link(rel="apple-touch-icon" sizes="57x57" href="/assets/favicons/apple-touch-icon-57x57.png")
-    link(rel="apple-touch-icon" sizes="114x114" href="/assets/favicons/apple-touch-icon-114x114.png")
-    link(rel="apple-touch-icon" sizes="72x72" href="/assets/favicons/apple-touch-icon-72x72.png")
-    link(rel="apple-touch-icon" sizes="144x144" href="/assets/favicons/apple-touch-icon-144x144.png")
-    link(rel="apple-touch-icon" sizes="60x60" href="/assets/favicons/apple-touch-icon-60x60.png")
-    link(rel="apple-touch-icon" sizes="120x120" href="/assets/favicons/apple-touch-icon-120x120.png")
-    link(rel="apple-touch-icon" sizes="76x76" href="/assets/favicons/apple-touch-icon-76x76.png")
-    link(rel="apple-touch-icon" sizes="152x152" href="/assets/favicons/apple-touch-icon-152x152.png")
-    link(rel="icon" type="image/png" href="/assets/favicons/favicon-196x196.png" sizes="196x196")
-    link(rel="icon" type="image/png" href="/assets/favicons/favicon-160x160.png" sizes="160x160")
-    link(rel="icon" type="image/png" href="/assets/favicons/favicon-96x96.png" sizes="96x96")
-    link(rel="icon" type="image/png" href="/assets/favicons/favicon-16x16.png" sizes="16x16")
-    link(rel="icon" type="image/png" href="/assets/favicons/favicon-32x32.png" sizes="32x32")
-    meta(name="msapplication-TileColor" content="#da532c")
-    meta(name="msapplication-TileImage" content="/assets/favicons/mstile-144x144.png")
-    meta(name="msapplication-config" content="/assets/favicons/browserconfig.xml")
+    link(rel='apple-touch-icon', sizes='57x57', href='/img/favicons/apple-touch-icon-57x57.png')
+    link(rel='apple-touch-icon', sizes='60x60', href='/img/favicons/apple-touch-icon-60x60.png')
+    link(rel='apple-touch-icon', sizes='72x72', href='/img/favicons/apple-touch-icon-72x72.png')
+    link(rel='apple-touch-icon', sizes='76x76', href='/img/favicons/apple-touch-icon-76x76.png')
+    link(rel='apple-touch-icon', sizes='114x114', href='/img/favicons/apple-touch-icon-114x114.png')
+    link(rel='apple-touch-icon', sizes='120x120', href='/img/favicons/apple-touch-icon-120x120.png')
+    link(rel='apple-touch-icon', sizes='144x144', href='/img/favicons/apple-touch-icon-144x144.png')
+    link(rel='apple-touch-icon', sizes='152x152', href='/img/favicons/apple-touch-icon-152x152.png')
+    link(rel='apple-touch-icon', sizes='180x180', href='/img/favicons/apple-touch-icon-180x180.png')
+    link(rel='icon', type='image/png', href='/img/favicons/favicon-32x32.png', sizes='32x32')
+    link(rel='icon', type='image/png', href='/img/favicons/android-chrome-192x192.png', sizes='192x192')
+    link(rel='icon', type='image/png', href='/img/favicons/favicon-96x96.png', sizes='96x96')
+    link(rel='icon', type='image/png', href='/img/favicons/favicon-16x16.png', sizes='16x16')
+    link(rel='manifest', href='/img/favicons/manifest.json')
+    link(rel='shortcut icon', href='/img/favicons/favicon.ico')
+    meta(name='msapplication-TileColor', content='#2f9dc3')
+    meta(name='msapplication-TileImage', content='/img/favicons/mstile-144x144.png')
+    meta(name='msapplication-config', content='/img/favicons/browserconfig.xml')
+    meta(name='theme-color', content='#ffffff')
 
     link(rel="stylesheet" href="/css/main.css")
 
     link(href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300' rel='stylesheet' type='text/css')
     link(href="/fonts/ss-social-regular/ss-social-regular.css" rel="stylesheet" type="text/css")
+    link(href="/fonts/museo/stylesheet.css" rel="stylesheet" type="text/css")
 
     <!--[if IE 8]>
     script(src='js/libs/html5shiv.min.js')
@@ -58,15 +63,8 @@ html(lang="en")
 
 body
 
-    .star-sky
-        - var rand = function(min, max){ return Math.floor((Math.random() * max) + min); };
-        - for(var i = 0; i < 15; i++)
-            - var size = rand(10, 20);
-            .star(style="width:"+size+"px; height:"+size+"px;top:"+rand(20, 960)+"px;left:"+rand(20, 960)+"px;")
-
-    .content-wrapper
-        include inc/area-intro
-        include inc/area-work
-        include inc/area-contact
+    include inc/area-intro
+    include inc/area-work
+    include inc/area-contact
 
     script(src="/js/app.js")

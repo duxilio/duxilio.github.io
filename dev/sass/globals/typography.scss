@@ -3,8 +3,9 @@ h1,h2,h3,h4,h5,h6 {
     line-height: $heading-line-height;
     margin-bottom: $margin-m;
 
-    &.bold {
-        font-weight: $body-bold-weight;
+    &.title {
+        font-family: $heading-alt-family;
+        //font-weight: $body-bold-weight;
     }
 }
 
@@ -33,7 +34,13 @@ h6 {
 }
 
 p {
+    margin: 0 auto;
+    margin-bottom: $margin-m;
     line-height: $body-line-height;
+
+    &.text-block {
+        max-width: 600px;
+    }
 }
 
 a {
@@ -76,6 +83,8 @@ ul.bullets {
 }
 
 ul.social {
+    margin-top: $margin-m;
+
     a {
         display: inline-block;
         margin-right: $margin-m;
@@ -91,16 +100,16 @@ ul.social {
     }
 
     li {
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
         display: block;
 
         @include border();
         border-radius: 100%;
 
         text-align: center;
-        line-height: 55px;
+        line-height: 45px;
 
-        font-size: 1.5em;
+        font-size: 1.1em;
     }
 }

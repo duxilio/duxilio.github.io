@@ -2,9 +2,18 @@
     padding: $margin-xl 0;
     text-align: center;
     overflow: hidden;
+    position: relative;
 }
 
 .push-area--alt {
-    color: $bg-color;
+    color: $brand-blue-dark;
     background-color: $white;
+
+    .bullets li {
+        background-color: $brand-blue-dark;
+    }
+
+    a {
+        color: $brand-blue-dark;
+    }
 }
