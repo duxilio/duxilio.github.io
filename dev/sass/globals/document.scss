@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: $body-weight $size-m $body-family;
+    color: $white;
+    line-height: $body-line-height;
+
+    background-color: $bg-color;
+}

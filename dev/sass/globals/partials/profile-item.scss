@@ -1,0 +1,18 @@
+.profile-item {
+    text-align: center;
+    display: inline-block;
+
+    margin-right: $margin-xl;
+    &:last-child {
+        margin-right: 0;
+    }
+
+    .avatar {
+        margin: 0 auto;
+        margin-bottom: $margin-m;
+    }
+}
+
+.profile-item__title {
+    margin-bottom: 0;
+}

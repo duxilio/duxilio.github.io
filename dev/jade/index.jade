@@ -49,9 +49,8 @@ html(lang="en")
 
     link(rel="stylesheet" href="/css/main.css")
 
-    script(src="//use.typekit.net/vjs0gdd.js")
-    script.
-        try{Typekit.load();}catch(e){}
+    link(href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300' rel='stylesheet' type='text/css')
+    link(href="/fonts/ss-social-regular/ss-social-regular.css" rel="stylesheet" type="text/css")
 
     <!--[if IE 8]>
     script(src='js/libs/html5shiv.min.js')
@@ -59,17 +58,15 @@ html(lang="en")
 
 body
 
-    #particles-js
+    .star-sky
+        - var rand = function(min, max){ return Math.floor((Math.random() * max) + min); };
+        - for(var i = 0; i < 15; i++)
+            - var size = rand(10, 20);
+            .star(style="width:"+size+"px; height:"+size+"px;top:"+rand(20, 960)+"px;left:"+rand(20, 960)+"px;")
 
-    .container#content-container
-        #logo
-            img(src="/img/duxilio-logo.svg")
-        h1 Software that makes life less complicated
-        p.intro Everyone has their daily rituals, what if you could automate them?
-        p.
-            Daily rituals, things you do every day or very often. We create and invest in software that
-            automates these rituals or makes them easier. Our goal is to help our users develop a lifestyle in which don't have to worry
-            about the little things anymore.
-
+    .content-wrapper
+        include inc/area-intro
+        include inc/area-work
+        include inc/area-contact
 
     script(src="/js/app.js")

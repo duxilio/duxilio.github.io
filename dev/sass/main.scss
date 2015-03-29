@@ -1,116 +1,12 @@
-@import "_vars";
-@import "_mixins";
+@import "modules/vars";
+@import "modules/mixins";
 
+@import "globals/document";
+@import "globals/typography";
+@import "globals/theme";
 
-html,body {
-	margin: 0;
-	padding: 0;
-	width: 100%;
-	height: 100%;
-}
+@import "globals/components/push-area";
+@import "globals/components/avatar";
 
-body {
-	font: $body-weight $size-m $body-family;
-	color: $base-color;
-	line-height: $body-line-height;
-	overflow: hidden;
-	background-color: $gray;
-}
-
-h1,h2,h3,h4,h5 {
-	font-weight: $heading-weight;
-	line-height: $heading-line-height;
-	margin: 0;
-}
-
-h1 {
-	font-size: 3.5em;
-}
-
-p {
-	max-width: 600px;
-	line-height: $body-line-height;
-}
-
-p.intro {
-	font-size: 1.5em;
-}
-
-a {
-	color: $brand-blue;
-	text-decoration: none;
-}
-
-#particles-js {
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-
-	z-index: 0;
-	background-color: $gray;
-
-	opacity: 0;
-	@include transition(opacity);
-
-	&.is-faded-in {
-		opacity: 1;
-	}
-}
-
-#logo {
-	max-width: 20px;
-
-	img {
-		width: 100%;
-	}
-}
-
-.container {
-	width: 700px;
-	margin: 0 auto;
-	padding: 80px 0;
-
-	position: relative;
-	z-index: 1;
-
-	* {
-		opacity: 0;
-
-		position: relative;
-		top: -20px;
-		transform: translateZ(0);
-		@include transition(all);
-
-		&.is-faded-in {
-			opacity: 1;
-			top: 0;
-		}
-	}
-}
-
-@media all and (max-width: 640px){
-	body {
-		font-size: $xs-size-m;
-	}
-
-	h1 {
-		font-size: 3em;
-	}
-
-	.container {
-		width: 85%;
-		padding: $margin-l 0;
-	}
-
-	#particles-js {
-		display: none;
-	}
-}
-
-@media all and (min-width: 640px) and (max-width: 768px){
-	.container {
-		width: 600px;
-	}
-}
+@import "globals/partials/illustrations";
+@import "globals/partials/profile-item";
