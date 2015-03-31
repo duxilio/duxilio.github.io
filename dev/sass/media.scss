@@ -32,6 +32,22 @@
         margin-top: $margin-m;
     }
 
+    .star-sky {
+        left: 0;
+        margin-left: 0;
+    }
+
+    .clouds {
+        //quickfix
+        min-width: 0;
+        &.clouds--top {
+            background-position: -40px 0;
+        }
+        &.clouds--top, &.clouds--top:before, &.clouds--bottom, &.clouds--bottom:before {
+            background-size: cover !important;
+        }
+    }
+
 }
 
 //tablet
