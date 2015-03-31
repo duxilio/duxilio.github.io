@@ -1,4 +1,7 @@
+//mobile
 @include media($max-width: 768px){
+
+    
 
     .container {
         width: 90%;
@@ -33,6 +36,7 @@
 
 }
 
+//tablet
 @include media(768px, 960px){
 
     .container {

@@ -33,6 +33,19 @@ h6 {
     font-size: 1.2em;
 }
 
+.title-block {
+    margin-bottom: $margin-l;
+    overflow: hidden;
+
+    .title-block__sub-title {
+        margin-bottom: $margin-s;
+    }
+
+    .bullets.bullets--inline {
+        margin-top: 0;
+    }
+}
+
 p {
     margin: 0 auto;
     margin-bottom: $margin-m;
@@ -78,6 +91,30 @@ ul.bullets {
         &.l {
             width: 8px;
             height: 8px;
+        }
+    }
+
+    &.bullets--inline {
+        li {
+            width: 6px;
+            height: 6px;
+            
+            display: inline-block;
+            
+            margin-bottom: 0;
+            margin-right: $margin-s;
+            
+            opacity: .5;
+
+            &.l {
+                width: 8px;
+                height: 8px;
+                
+                opacity: 1;
+                
+                position: relative;
+                top: 1px;
+            }
         }
     }
 }
