@@ -33,6 +33,16 @@
     height: 84px;
     position: relative;
 
+    &:before {
+        content: '';
+        position: absolute;
+        top: -10px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: .1;
+    }
+
     &.clouds--top {
         background: url('/img/clouds/clouds-top.svg');
 
@@ -51,15 +61,5 @@
             height: 80px;
             top: auto;
         }
-    }
-
-    &:before {
-        content: '';
-        position: absolute;
-        top: -10px;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        opacity: .1;
     }
 }
