@@ -2,8 +2,6 @@
 
 $data = $_POST;
 
-var_dump($_REQUEST);
-
 
 if (isset($data['email']) && $data['email'] != '' && strtoupper($_SERVER['REQUEST_METHOD']) === 'POST'):
 	include('assets/settings.php');
@@ -15,16 +13,17 @@ if (isset($data['email']) && $data['email'] != '' && strtoupper($_SERVER['REQUES
 
 	if (!filter_var($data['email'], FILTER_VALIDATE_EMAIL)):
 		$app->setStatus(false);
-		exit($app->response());
+		return($app->response());
 	endif;
 
 	if(!$app->insertdata()):
 		$app->setStatus(false);
-		exit($app->response());
+		return($app->response());
 	endif;
 
 	$app->setStatus(true);
-	exit($app->response());
+	return($app->response());
+
 endif;
 die('That is not a valid post request.');
 
