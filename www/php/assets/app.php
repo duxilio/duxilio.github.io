@@ -30,7 +30,7 @@ class app{
 	}
 
 	public function response(){
-		return json_encode(['succes' => $this->status, 'data' => $this->data]);
+		return json_encode(array('success' => $this->status, 'data' => $this->data));
 	}
 
 
