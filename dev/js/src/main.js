@@ -42,20 +42,26 @@
 
             var val = emailInput.value;
 
+            console.log('checking '+val);
+
             if(!/.+\@.+\..+/.test(val)){
                 showState('error');
                 return;
             }
 
+            console.log('adding ani');
+
             //send email
             BsendBtn.addClass('is-mailing');
 
+            console.log('sending...');
             B.ajax({
                 url: '../php/form.php',
                 type: 'post',
                 data: 'email='+val,
                 dataType: 'json',
                 success: function(res){
+                    console.log('done, send');
                     console.log(res);
                     BsendBtn.removeClass('is-mailing');
                     if(res.success) {
