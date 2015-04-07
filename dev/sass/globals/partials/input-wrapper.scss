@@ -8,7 +8,7 @@
         display: block;
 
         padding: $margin-s $margin-m;
-        float: none;
+        float: left;
         overflow: hidden;
 
         &:focus {
@@ -19,10 +19,10 @@
     &__input {
         font: $body-weight $size-s $body-family;
         min-width: 240px;
+        height: 45px;
 
         @include border($color: $brand-blue);
         border-right: none;
-        float: left;
 
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
@@ -30,7 +30,11 @@
 
     &__icon-wrapper {
         width: 50px;
-        padding: $margin-s 0;
+
+        height: 45px;
+        line-height: 45px;
+
+        padding: 0;
 
         @include border($color: $brand-blue-dark);
         @include transition(all);

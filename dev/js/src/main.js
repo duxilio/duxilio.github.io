@@ -50,10 +50,20 @@
             //send email
             BsendBtn.addClass('is-mailing');
 
-            setTimeout(function(){
-                BsendBtn.removeClass('is-mailing');
-                showState('success', true);
-            }, 5000);
+            B.ajax({
+                url: '../php/form.php',
+                type: 'post',
+                data: 'email='+val,
+                dataType: 'json',
+                success: function(res){
+                    BsendBtn.removeClass('is-mailing');
+                    if(res.success) {
+                        showState('success', true);
+                    } else {
+                        showState('error');
+                    }
+                }
+            });
         });
 
     }());
