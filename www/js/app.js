@@ -219,10 +219,20 @@ if (/(MSIE [7-9]\.|Opera.*Version\/(10\.[5-9]|(11|12)\.)|Chrome\/([1-9]|10)\.|Ve
             //send email
             BsendBtn.addClass('is-mailing');
 
-            setTimeout(function(){
-                BsendBtn.removeClass('is-mailing');
-                showState('success', true);
-            }, 5000);
+            B.ajax({
+                url: '../php/form.php',
+                type: 'post',
+                data: 'email='+val,
+                dataType: 'json',
+                success: function(res){
+                    BsendBtn.removeClass('is-mailing');
+                    if(res.success) {
+                        showState('success', true);
+                    } else {
+                        showState('error');
+                    }
+                }
+            });
         });
 
     }());
