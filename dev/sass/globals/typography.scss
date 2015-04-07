@@ -98,16 +98,16 @@ ul.bullets {
         li {
             width: 6px;
             height: 6px;
-            
+
             display: inline-block;
-            
+
             margin-bottom: 0;
             margin-right: $margin-s;
 
             &.l {
                 width: 8px;
                 height: 8px;
-                
+
                 position: relative;
                 top: 1px;
             }
@@ -141,7 +141,7 @@ ul.social {
         border-radius: 100%;
 
         text-align: center;
-        line-height: 45px;
+        line-height: 40px;
 
         font-size: 1.1em;
     }

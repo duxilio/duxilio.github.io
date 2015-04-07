@@ -1,0 +1,99 @@
+.input-wrapper {
+    display: inline-block;
+
+    &__input, &__icon-wrapper {
+        font-size: $size-m;
+
+        border-radius: $border-radius;
+        display: block;
+
+        padding: $margin-s $margin-m;
+        float: none;
+        overflow: hidden;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &__input {
+        font: $body-weight $size-s $body-family;
+        min-width: 240px;
+
+        @include border($color: $brand-blue);
+        border-right: none;
+        float: left;
+
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    &__icon-wrapper {
+        width: 50px;
+        padding: $margin-s 0;
+
+        @include border($color: $brand-blue-dark);
+        @include transition(all);
+
+        color: $white;
+        background-color: $brand-blue-dark;
+
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+
+        padding-bottom: 5px;
+        cursor: pointer;
+
+        &__icon:before {
+            position: relative;
+            content: 'send';
+            @include transition(opacity, $duration: $transition-duration-alt);
+        }
+
+        &.is-hidden &__icon:before {
+            opacity: 0;
+        }
+        &.is-mailing &__icon:before {
+            content: 'mail';
+            animation: mail-icon-mailing 1.5s ease infinite;
+        }
+        &.is-success &__icon:before {
+            content: 'check';
+        }
+        &.is-error &__icon:before {
+            content: 'delete';
+        }
+
+        &:hover {
+            background-color: $brand-deep-blue;
+            border-color: $brand-deep-blue;
+        }
+    }
+}
+
+@keyframes mail-icon-mailing {
+    0% {
+        left: 0;
+    }
+
+    50% {
+        left: 40px;
+    }
+
+    51% {
+        left: 40px;
+        opacity: 0;
+    }
+    52% {
+        left: -40px;
+        opacity: 0;
+    }
+    53% {
+        left: -40px;
+        opacity: 1;
+    }
+
+    100% {
+        left: 0;
+    }
+}

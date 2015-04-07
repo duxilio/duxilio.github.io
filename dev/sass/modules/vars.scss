@@ -8,6 +8,7 @@ $heading-alt-family: 'Museo-100', 'Open Sans', Helvetica, Arial, sans-serif;;
 $heading-weight: 300;
 $heading-line-height: 1.2em;
 
+$size-s: .9em;
 $size-m: 16px;
 
 
@@ -34,8 +35,10 @@ $margin-xl: 60px;
 //Borders
 $border-style: solid;
 $border-width: 2px;
+$border-radius: 5px;
 
 
 //Animation
 $transition-duration: 1s;
+$transition-duration-alt: .3s;
 $transition-timing: ease;

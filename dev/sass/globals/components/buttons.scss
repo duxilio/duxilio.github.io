@@ -4,6 +4,6 @@ a.btn {
     color: $white;
     background-color: $brand-blue-dark;
 
-    border-radius: 5px;
+    border-radius: $border-radius;
     display: inline-block;
 }
