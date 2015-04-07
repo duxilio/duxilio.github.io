@@ -34,37 +34,45 @@
                         }, 1000);
                     }
                 }, 300);
+            },
+
+            sendMail = function(e){
+                e.preventDefault();
+                if(performingState) return;
+
+                var val = emailInput.value;
+
+                if(!/.+\@.+\..+/.test(val)){
+                    showState('error');
+                    return;
+                }
+
+                //send email
+                BsendBtn.addClass('is-mailing');
+
+                B.ajax({
+                    url: '../php/form.php',
+                    type: 'post',
+                    data: 'email='+val,
+                    dataType: 'json',
+                    success: function(res){
+                        BsendBtn.removeClass('is-mailing');
+                        if(res.success) {
+                            showState('success', true);
+                        } else {
+                            showState('error');
+                        }
+                    }
+                });
             };
 
-        BsendBtn.click(function(e){
-            e.preventDefault();
-            if(performingState) return;
-
-            var val = emailInput.value;
-
-            if(!/.+\@.+\..+/.test(val)){
-                showState('error');
-                return;
+        B(emailInput).on('keyup', function(e){
+            if(e.keyCode === 13){
+                e.preventDefault();
+                sendMail(e);
             }
-
-            //send email
-            BsendBtn.addClass('is-mailing');
-
-            B.ajax({
-                url: '../php/form.php',
-                type: 'post',
-                data: 'email='+val,
-                dataType: 'json',
-                success: function(res){
-                    BsendBtn.removeClass('is-mailing');
-                    if(res.success) {
-                        showState('success', true);
-                    } else {
-                        showState('error');
-                    }
-                }
-            });
         });
+        BsendBtn.click(sendMail);
 
     }());
 
