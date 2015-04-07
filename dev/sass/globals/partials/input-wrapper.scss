@@ -18,7 +18,7 @@
 
     &__input {
         font: $body-weight $size-s $body-family;
-        min-width: 240px;
+        min-width: 200px;
         height: 45px;
 
         @include border($color: $brand-blue);
@@ -26,6 +26,8 @@
 
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
+
+        -webkit-appearance: none;
     }
 
     &__icon-wrapper {
