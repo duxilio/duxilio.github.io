@@ -13,19 +13,19 @@ if (isset($data['email']) && $data['email'] != '' && strtoupper($_SERVER['REQUES
 
 	if (!filter_var($data['email'], FILTER_VALIDATE_EMAIL)):
 		$app->setStatus(false);
-		return($app->response());
+		die($app->response());
 	endif;
 
 	if(!$app->insertdata()):
 		$app->setStatus(false);
-		return($app->response());
+		die($app->response());
 	endif;
 
 	$app->setStatus(true);
-	return($app->response());
+	die($app->response());
 
 endif;
-return('That is not a valid post request.');
+die('That is not a valid post request.');
 
 
 
