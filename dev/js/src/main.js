@@ -9,7 +9,8 @@
     //email
     (function(){
 
-        var emailInput = _gebi('email-input'),
+        var emailForm = _gebi('email-form'),
+            emailInput = _gebi('email-input'),
             sendBtn = _gebi('email-send-btn'),
 
             BsendBtn = B(sendBtn),
@@ -38,13 +39,13 @@
 
             sendMail = function(e){
                 e.preventDefault();
-                if(performingState) return;
+                if(performingState) return false;
 
                 var val = emailInput.value;
 
                 if(!/.+\@.+\..+/.test(val)){
                     showState('error');
-                    return;
+                    return false;
                 }
 
                 //send email
@@ -66,13 +67,7 @@
                 });
             };
 
-        B(emailInput).on('keyup', function(e){
-            alert(e.keyCode);
-            if(e.keyCode === 13){
-                e.preventDefault();
-                sendMail(e);
-            }
-        });
+        B(emailForm).on('submit', sendMail);
         BsendBtn.click(sendMail);
 
     }());
