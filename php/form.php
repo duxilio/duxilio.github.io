@@ -1,9 +1,5 @@
 <?php
 
-
-// set up test data
-$_POST['email'] = 'matti@duxilio.nl';
-
 $data = $_POST;
 
 if (isset($data['email']) && $data['email'] != ''):
