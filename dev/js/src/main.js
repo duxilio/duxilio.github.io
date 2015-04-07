@@ -56,6 +56,7 @@
                 data: 'email='+val,
                 dataType: 'json',
                 success: function(res){
+                    console.log(res);
                     BsendBtn.removeClass('is-mailing');
                     if(res.success) {
                         showState('success', true);
