@@ -25,7 +25,7 @@ if (isset($data['email']) && $data['email'] != '' && strtoupper($_SERVER['REQUES
 	return($app->response());
 
 endif;
-die('That is not a valid post request.');
+return('That is not a valid post request.');
 
 
 
