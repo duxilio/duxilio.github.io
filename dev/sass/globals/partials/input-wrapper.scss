@@ -18,7 +18,8 @@
 
     &__input {
         font: $body-weight $size-s $body-family;
-        width: 200px;
+        width: 100%;
+        max-width: 200px;
         height: 45px;
 
         @include border($color: $brand-blue);

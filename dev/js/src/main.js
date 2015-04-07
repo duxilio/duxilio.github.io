@@ -38,8 +38,6 @@
             },
 
             sendMail = function(e){
-                document.activeElement.blur();
-
                 e.preventDefault();
                 if(performingState) return false;
 
@@ -62,6 +60,7 @@
                         BsendBtn.removeClass('is-mailing');
                         if(res.success) {
                             showState('success', true);
+                            document.activeElement.blur();
                         } else {
                             showState('error');
                         }

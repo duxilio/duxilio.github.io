@@ -207,8 +207,6 @@ if (/(MSIE [7-9]\.|Opera.*Version\/(10\.[5-9]|(11|12)\.)|Chrome\/([1-9]|10)\.|Ve
             },
 
             sendMail = function(e){
-                document.activeElement.blur();
-
                 e.preventDefault();
                 if(performingState) return false;
 
@@ -231,6 +229,7 @@ if (/(MSIE [7-9]\.|Opera.*Version\/(10\.[5-9]|(11|12)\.)|Chrome\/([1-9]|10)\.|Ve
                         BsendBtn.removeClass('is-mailing');
                         if(res.success) {
                             showState('success', true);
+                            document.activeElement.blur();
                         } else {
                             showState('error');
                         }
