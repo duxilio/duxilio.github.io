@@ -2,7 +2,7 @@
 
 $data = $_POST;
 
-var_dump($data);
+var_dump($_REQUEST);
 
 
 if (isset($data['email']) && $data['email'] != '' && strtoupper($_SERVER['REQUEST_METHOD']) === 'POST'):
