@@ -1,9 +1,8 @@
 <?php
 
-if(!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest'): else: die('broh go do somethign with your life'); endif;
-
-
 $data = $_POST;
+
+var_dump($_REQUEST);
 
 
 if (isset($data['email']) && $data['email'] != '' && strtoupper($_SERVER['REQUEST_METHOD']) === 'POST'):
