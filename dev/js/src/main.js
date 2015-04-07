@@ -38,6 +38,8 @@
             },
 
             sendMail = function(e){
+                document.activeElement.blur();
+
                 e.preventDefault();
                 if(performingState) return false;
 
