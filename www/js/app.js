@@ -236,6 +236,7 @@ if (/(MSIE [7-9]\.|Opera.*Version\/(10\.[5-9]|(11|12)\.)|Chrome\/([1-9]|10)\.|Ve
             };
 
         B(emailInput).on('keyup', function(e){
+            alert(e.keyCode);
             if(e.keyCode === 13){
                 e.preventDefault();
                 sendMail(e);

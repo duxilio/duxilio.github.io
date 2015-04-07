@@ -103,7 +103,7 @@ module.exports = function (grunt){
           noempty: true, //Prohibit use of empty blocks
           maxparams: 3, //Max number of formal params allowed per function
           maxdepth: 4, //Max depth of nested blocks (within functions)
-          predef: ['B', 'Browserkit', 'particlesJS', 'console']
+          predef: ['alert', 'B', 'Browserkit', 'particlesJS', 'console']
       },
       all: ['<%= devRoot %>/js/src/*.js']
     },

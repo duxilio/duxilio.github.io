@@ -67,6 +67,7 @@
             };
 
         B(emailInput).on('keyup', function(e){
+            alert(e.keyCode);
             if(e.keyCode === 13){
                 e.preventDefault();
                 sendMail(e);
