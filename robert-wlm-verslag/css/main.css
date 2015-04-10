@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html, body {
+  width: 100%;
+  height: 100%; }
+
+.page {
+  width: 600px;
+  margin: 80px auto 0 auto;
+  display: none; }
+  .page.visible {
+    display: block; }
+
+body {
+  font: 100 16px "Brandon text", Verdana, Arial;
+  color: #7a7a7a;
+  background-color: #fff;
+  line-height: 1.5em;
+  border-top: solid 2px #3697ba; }
+
+p, img, ul, ol, table {
+  margin-bottom: 25px; }
+
+a {
+  color: #c6899d; }
+
+small {
+  font-size: 0.9em; }
+
+b, strong {
+  font-family: "Brandon text", Verdana, Arial; }
+
+img {
+  width: 100%;
+  border: solid 2px #a8a8a8; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 100;
+  margin-bottom: 15px;
+  line-height: 1.3em; }
+
+h1 {
+  font-size: 2.8em; 
+  color: #b96480;
+}
+
+h2 {
+  font-size: 2.4em;
+  color: #6ea5bd; }
+
+h3 {
+  font-size: 2em;
+  color: #6ea5bd; }
+
+h4 {
+  font-size: 1.6em; 
+  color: #74ad4f; }
+
+h5 {
+  font-size: 1.4em; 
+  color: #74ad4f; }
+
+h6 {
+  font-size: 1.1em; }
+
+ul, ol {
+  margin-left: 24px; }
+  ul li, ol li {
+    margin-bottom: 8px; }
+    ul li img, ol li img {
+      margin-bottom: 0; }
+    ul li > ul, ul li ol, ol li > ul, ol li ol {
+      margin-bottom: 15px; }
+
+table {
+  width: 100%;
+  display: block;
+  border-collapse: collapse;
+  overflow-x: auto; }
+  table:before {
+    content: 'Scroll \2192';
+    font-size: 0.9em;
+    color: #a8a8a8;
+    float: right; }
+  table td, table th {
+    padding: 15px 20px;
+    border: solid 2px #e8e8e8; }
+  table th {
+    text-align: left; }
+
+.navigation {
+  position: fixed;
+  bottom: 25px;
+  left: 25px;
+  right: 25px; }
+  .navigation a.btn {
+    font-size: 0.9em;
+    line-height: 1em;
+    padding: 15px 20px;
+    background: #e8e8e8;
+    text-decoration: none;
+    float: left;
+    opacity: 1; }
+    .navigation a.btn:last-child {
+      float: right; }
+
+.footer {
+  width: 600px;
+  font-size: 0.8em;
+  color: #a8a8a8;
+  overflow: hidden;
+  margin: 40px auto 25px auto; }
+  .footer p {
+    float: left;
+    margin: 0; }
+  .footer .page-number {
+    float: right; }
+  .footer .progress-bar {
+    width: 100%;
+    height: 2px;
+    background: #e8e8e8;
+    margin-bottom: 15px; }
+    .footer .progress-bar div {
+      height: 100%;
+      width: 0;
+      background: #a8a8a8; }
+
+.enlarge {
+  width: 100%;
+  height: 300px;
+  cursor: zoom-in;
+  overflow: hidden;
+  border: solid 2px #a8a8a8;
+  line-height: 0;
+  margin-bottom: 8px; }
+  .enlarge + cite {
+    font-size: 0.8em;
+    font-style: italic;
+    color: #a8a8a8;
+    display: block;
+    margin-bottom: 25px; }
+  .enlarge.enlarged {
+    cursor: zoom-out;
+    height: auto; }
+  .enlarge img {
+    border: none;
+    margin: 0; }
+
+.cover {
+  margin-top: 150px;
+  margin-bottom: 190px; }
+
+.index:before {
+  display: none; }
+.index table {
+  width: 100%;
+  display: table; }
+  .index table:before {
+    display: none; }
+  .index table th, .index table td {
+    padding: 0;
+    border: none; }
+  .index table tr td {
+    padding-bottom: 8px;
+    font-family: "Brandon text", Verdana, Arial;; }
+    .index table tr td:last-child {
+      text-align: right; }
+    .index table tr td .page-idx {
+      display: inline-block;
+      margin-right: 8px; }
+  .index table tr:last-child td {
+    padding-bottom: 0; }
+  .index table tr.sub-page td {
+    font-family: "Museo-100";
+    padding-left: 25px; }
+
+@media all and (max-width: 600px) {
+  .page, .footer {
+    width: 90%;
+    padding-right: 5%;
+    padding-left: 5%; }
+
+  .page {
+    margin-top: 40px; }
+
+  .cover {
+    margin-top: 140px; }
+
+  .navigation {
+    bottom: 0;
+    left: 0;
+    right: 0; }
+    .navigation a.btn {
+      text-align: center;
+      width: 50%; } }
+
+/*# sourceMappingURL=main.css.map */

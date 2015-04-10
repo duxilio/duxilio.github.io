@@ -1,0 +1,49 @@
+.cover {
+    margin-top: 150px;
+    margin-bottom: 150px+$margin-l;
+}
+
+.index {
+    &:before {
+        display: none;
+    }
+
+    table {
+        width: 100%;
+        display: table;
+
+        &:before {
+            display: none;
+        }
+
+        th,td {
+            padding: 0;
+            border: none;
+        }
+
+        tr {
+            td {
+                padding-bottom: $margin-xs;
+                font-family: $bold-family;
+
+                &:last-child {
+                    text-align: right;
+                }
+
+                .page-idx {
+                    display: inline-block;
+                    margin-right: $margin-xs;
+                }
+            }
+
+            &:last-child td {
+                padding-bottom: 0;
+            }
+
+            &.sub-page td {
+                font-family: $body-family;
+                padding-left: $margin-m;
+            }
+        }
+    }
+}
