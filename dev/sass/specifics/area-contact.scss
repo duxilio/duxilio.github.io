@@ -1,0 +1,38 @@
+.area-about {
+    padding-bottom: 0
+}
+
+.area-contact-bg {
+    width: 1800px;
+    height: 880px;
+
+    margin-left: -310px;
+
+    position: absolute;
+    bottom: 0;
+
+    background-image: url('/img/duxilio-moon.svg');
+    background-repeat: no-repeat;
+    background-position: bottom left;
+
+    z-index: -1;
+}
+
+.area-contact {
+    min-height: 877px;
+    padding: 0;
+
+    color: $base-color;
+    a {
+        color: $base-color;
+    }
+
+    .container {
+        position: relative;
+        top: 300px;
+    }
+
+    ul.bullets li {
+        background-color: $gray-light;
+    }
+}

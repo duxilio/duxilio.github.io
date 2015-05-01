@@ -25,7 +25,7 @@ h4 {
     font-size: 1.8em;
 }
 
-h5 {
+h5, p.intro {
     font-size: 1.4em;
 }
 
@@ -50,10 +50,19 @@ p {
     margin: 0 auto;
     margin-bottom: $margin-m;
     line-height: $body-line-height;
+}
 
-    &.text-block {
-        max-width: 600px;
-    }
+.text-block {
+    max-width: 600px;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.center {
+    margin-right: auto;
+    margin-left: auto;
 }
 
 a {
@@ -65,7 +74,7 @@ hr {
     border: none;
     max-width: 40px;
     height: 1px;
-    background-color: $white;
+    background-color: $gray-light;
     margin: $margin-s auto;
 }
 
@@ -121,6 +130,7 @@ ul.social {
     a {
         display: inline-block;
         margin-right: $margin-m;
+        color: $gray-light;
 
         &:last-child {
             margin-right: 0;
@@ -137,7 +147,7 @@ ul.social {
         height: 40px;
         display: block;
 
-        @include border();
+        @include border($color: $gray-light);
         border-radius: 100%;
 
         text-align: center;
