@@ -1,9 +1,12 @@
+@import "vendor/grid";
+
 @import "modules/vars";
 @import "modules/mixins";
 
 @import "globals/document";
 @import "globals/typography";
 @import "globals/theme";
+@import "globals/grid";
 
 @import "globals/components/push-area";
 @import "globals/components/avatar";

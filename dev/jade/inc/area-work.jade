@@ -5,21 +5,22 @@
 
 .clouds.clouds--top
 .push-area.push-area--alt
-    .container
-        .socialhack-logo
-            img(src="/img/socialhack-logo.svg")
-        +bullets-v
-        h6 Are you ready to get social?
-        p.text-block.
-            SocialHack lets you connect with other developers near you.
-            Find out what you have in common and go over to have a chat.
+    .container.text-left
+        .col.col--two-third
+            .socialhack-logo
+                img(src="/img/socialhack-logo.svg")
+            h6 
+                b Are you ready to get social?
+            p.
+                SocialHack lets you connect with other developers near you.
+                Find out what you have in common and go over to have a chat.
 
-        //a.btn Coming Soon
-        p Be the first to know when we release
-        form(action="#" method="post")#email-form
-            .input-wrapper
-                input#email-input(name="email" type="email" placeholder="dannycrane@gmail.com" required).input-wrapper__input
-                span.input-wrapper__icon-wrapper.ss-icon.ss-standard#email-send-btn
-                    span.input-wrapper__icon-wrapper__icon
+            //a.btn Coming Soon
+            p Be the first to know when we release
+            form(action="#" method="post")#email-form
+                .input-wrapper
+                    input#email-input(name="email" type="email" placeholder="dannycrane@gmail.com" required).input-wrapper__input
+                    span.input-wrapper__icon-wrapper.ss-icon.ss-standard#email-send-btn
+                        span.input-wrapper__icon-wrapper__icon
 
 .clouds.clouds--bottom

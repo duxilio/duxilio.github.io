@@ -1,0 +1,12 @@
+.col {
+	width: 100%;
+	overflow: hidden;
+}
+
+.col.col--two-third {
+	@include column(8);
+}
+
+.col.col--one-third {
+	@include column(4);
+}

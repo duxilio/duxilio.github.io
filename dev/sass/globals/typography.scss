@@ -51,13 +51,13 @@ h6 {
 }
 
 p {
-    margin: 0 auto;
     margin-bottom: $margin-m;
     line-height: $body-line-height;
 }
 
 .text-block {
     max-width: 600px;
+    margin: 0 auto;
 }
 
 .text-left {
