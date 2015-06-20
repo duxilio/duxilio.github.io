@@ -19,6 +19,26 @@
     margin-bottom: $margin-s;
 }
 
+.iphone {
+    width: 100%;
+    position: relative;
+
+    img {
+        width: 100%;
+    }
+
+    &:before {
+        content: '';
+        height: 117px;
+        background-image: url('/img/clouds/clouds-iphone-overlay.svg');
+
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+}
+
 .rocket {
     max-width: 160px;
     line-height: 0;
