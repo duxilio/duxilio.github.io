@@ -1,34 +1,7 @@
-.intro-area {
+.area-intro {
 
     .logo {
-        max-width: 110px;
-        margin: 0 auto;
-    }
-
-    .bullets {
-        margin-top: $margin-m;
-
-        li {
-            display: block;
-
-            width: 4px;
-            height: 4px;
-
-            background-color: $white;
-            border-radius: 100%;
-
-            margin: 0 auto;
-            margin-bottom: $margin-m;
-
-            &.m {
-                width: 6px;
-                height: 6px;
-            }
-            &.l {
-                width: 8px;
-                height: 8px;
-            }
-        }
+        margin-bottom: $margin-xl;
     }
 
 }

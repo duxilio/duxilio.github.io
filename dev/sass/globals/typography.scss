@@ -7,6 +7,10 @@ h1,h2,h3,h4,h5,h6 {
         font-family: $heading-alt-family;
         //font-weight: $body-bold-weight;
     }
+
+    &.no-spacing {
+        margin-bottom: 0;
+    }
 }
 
 h1 {
