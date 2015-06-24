@@ -24,5 +24,5 @@ mixin profile-item(src, name, profession, email)
         h6.profile-item__title #{name}
         small #{profession}
         hr
-        a(href="mailto:#{email}" onclick="_gaq.push(['_trackEvent', 'Contact', 'Email', '#{name}']);")
+        a(href="mailto:#{email}" onclick="ga('send', 'event', 'Contact', 'click', 'email_#{name}');")
             small #{email}

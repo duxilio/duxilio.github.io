@@ -21,7 +21,7 @@
             p Be the first to know when we release
             form(action="#" method="post")#email-form
                 .input-wrapper
-                    input#email-input(name="email" type="email" placeholder="dannycrane@gmail.com" onfocus="_gaq.push(['_trackEvent', 'Work', 'SocialHack', 'email_input_focus']);" required).input-wrapper__input
+                    input#email-input(name="email" type="email" placeholder="dannycrane@gmail.com" onfocus="ga('send', 'event', 'SocialHack', 'focus', 'input');" required).input-wrapper__input
                     span.input-wrapper__icon-wrapper.ss-icon.ss-standard#email-send-btn
                         span.input-wrapper__icon-wrapper__icon
 

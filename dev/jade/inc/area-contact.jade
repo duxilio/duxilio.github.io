@@ -14,13 +14,13 @@
             +profile-item('mattivandeweem', 'Matti van de Weem', 'Lead Back-end', 'matti@duxilio.com')
 
         .row.row--push
-            a(href="mailto:hello@duxilio.com" onclick="_gaq.push(['_trackEvent', 'Contact', 'Email', 'Hello']);") hello@duxilio.com
+            a(href="mailto:hello@duxilio.com" onclick="ga('send', 'event', 'Contact', 'click', 'email_hello');") hello@duxilio.com
             |  | 
-            a(href="tel:+31624877533" onclick="_gaq.push(['_trackEvent', 'Contact', 'Call', 'General']);") +31 6 24 87 75 33
+            a(href="tel:+31624877533" onclick="ga('send', 'event', 'Contact', 'click', 'call_general');") +31 6 24 87 75 33
             ul.social
-                a(href="http://twitter.com/duxil_io" title="Duxilio Twitter" target="_blank" onclick="_gaq.push(['_trackEvent', 'Contact', 'Social', 'Twitter']);")
+                a(href="http://twitter.com/duxil_io" title="Duxilio Twitter" target="_blank" onclick="ga('send', 'event', 'Contact', 'click', 'social_twitter');")
                     li.ss-icon.ss-social-regular twitter
-                a(href="http://facebook.com/duxilio" title="Duxilio Facebook" target="_blank" onclick="_gaq.push(['_trackEvent', 'Contact', 'Social', 'Facebook']);")
+                a(href="http://facebook.com/duxilio" title="Duxilio Facebook" target="_blank" onclick="ga('send', 'event', 'Contact', 'click', 'social_facebook');")
                     li.ss-icon.ss-social-regular facebook
-                a(href="http://www.linkedin.com/company/duxilio" title="Duxilio Linkedin" target="_blank" onclick="_gaq.push(['_trackEvent', 'Contact', 'Social', 'LinkedIn']);")
+                a(href="http://www.linkedin.com/company/duxilio" title="Duxilio Linkedin" target="_blank" onclick="ga('send', 'event', 'Contact', 'click', 'social_linkedin');")
                     li.ss-icon.ss-social-regular linkedin
