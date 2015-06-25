@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Daily Goals before 8 A.M.</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 900 58px "Open Sans";
+  background-color: #F05B41;
+}
+
+.container {
+  width: 900px;
+  margin: 60px auto;
+}
+
+ol {
+  line-height: 2em;
+}
+
+ol li {
+  display: inline-block;
+  color: #F05B41;
+  background-color: #fff;
+  line-height: 1.3em;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  margin-bottom: 1em;
+}
+
+ol li.js-active {
+  background-color: #F05B41;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.gif {
+  width: 100%;
+  padding-left: 1em;
+}
+
+.gif img {
+  border: solid 3px white;
+}
+
+@media all and (max-width: 600px) {
+  body {
+    font-size: 34px;
+  }
+  .gif {
+    padding-left: 0;
+  }
+  .container {
+    width: 90%;
+  }
+}
+
+</style>
+</head>
+<body>
+	
+<div class="container">
+  <ol>
+    <li>Sleep 7+ hours</li>
+    <li>Take a cold shower</li>
+    <li>Eat 3 eggs</li>
+    <li>Read for 15/30 min</li>
+    <li>Review long term goals</li>
+    <li>Do something towards long-term goals</li>
+    <li>Sport 30+ min</li>
+  </ol>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+$('li').click(function(){
+  var $this = $(this),
+      $img = $this.find('img'),
+      src;
+  
+  $.getJSON('http://api.giphy.com/v1/gifs/search?q=funny+cat&api_key=dc6zaTOxFJmzC', function(res){
+    var data = res.data,
+        randItem = data[Math.floor(Math.random()*data.length)];
+        src = randItem.images.fixed_height.url;
+    
+    $this.after('<div class="gif"><img src="'+src+'" /></div>');
+    $this.addClass('js-active');
+  });
+});
+</script>
+</body>
+</html>
