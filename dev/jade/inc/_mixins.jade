@@ -17,9 +17,9 @@ mixin bullets-x
         li.l
         li
 
-mixin profile-item(src, name, profession, email, linkedinUrl)
+mixin profile-item(src, name, profession, email, linkedinUsername)
     .profile-item
-        a(href="#{linkedinUrl}" title="#{name}'s Linkedin")
+        a(href="https://www.linkedin.com/in/#{linkedinUsername}" title="#{name}'s Linkedin")
             .avatar
                 img(src="/img/team/#{src}.jpeg")
             h6.profile-item__title #{name}
