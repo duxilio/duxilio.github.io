@@ -17,11 +17,12 @@ mixin bullets-x
         li.l
         li
 
-mixin profile-item(src, name, profession, email)
+mixin profile-item(src, name, profession, email, linkedinUrl)
     .profile-item
-        .avatar
-            img(src="/img/team/#{src}.jpeg")
-        h6.profile-item__title #{name}
+        a(href="#{linkedinUrl}" title="#{name}'s Linkedin")
+            .avatar
+                img(src="/img/team/#{src}.jpeg")
+            h6.profile-item__title #{name}
         small #{profession}
         hr
         a(href="mailto:#{email}" onclick="ga('send', 'event', 'Contact', 'click', 'email_#{name}');")
