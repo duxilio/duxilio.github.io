@@ -9,43 +9,43 @@
  * You may obtain a valid license at the URLs below.
  * 
  * Webfont: Museo 900 by exljbris
- * URL: http://www.myfonts.com/fonts/exljbris/museo/900/
+ * URL: http://www.myfonts.com/www/fonts/exljbris/museo/900/
  * Copyright: Copyright (c) 2008 by Jos Buivenga/exljbris. All rights reserved.
  * 
  * Webfont: Museo 700 by exljbris
- * URL: http://www.myfonts.com/fonts/exljbris/museo/700/
+ * URL: http://www.myfonts.com/www/fonts/exljbris/museo/700/
  * Copyright: Copyright (c) 2008 by Jos Buivenga/exljbris. All rights reserved.
  * 
  * Webfont: Museo 300 by exljbris
- * URL: http://www.myfonts.com/fonts/exljbris/museo/300/
+ * URL: http://www.myfonts.com/www/fonts/exljbris/museo/300/
  * Copyright: Copyright (c) 2008 by Jos Buivenga/exljbris. All rights reserved.
  * 
  * Webfont: Museo 100 by exljbris
- * URL: http://www.myfonts.com/fonts/exljbris/museo/100/
+ * URL: http://www.myfonts.com/www/fonts/exljbris/museo/100/
  * Copyright: Copyright (c) 2008 by Jos Buivenga/exljbris. All rights reserved.
  * 
  * Webfont: Museo 500 by exljbris
- * URL: http://www.myfonts.com/fonts/exljbris/museo/500/
+ * URL: http://www.myfonts.com/www/fonts/exljbris/museo/500/
  * Copyright: Copyright (c) 2008 by Jos Buivenga/exljbris. All rights reserved.
  * 
  * Webfont: Museo 300 Italic by exljbris
- * URL: http://www.myfonts.com/fonts/exljbris/museo/300-italic/
+ * URL: http://www.myfonts.com/www/fonts/exljbris/museo/300-italic/
  * Copyright: Copyright (c) 2008-2010 by Jos Buivenga/exljbris. All rights reserved.
  * 
  * Webfont: Museo 900 Italic by exljbris
- * URL: http://www.myfonts.com/fonts/exljbris/museo/900-italic/
+ * URL: http://www.myfonts.com/www/fonts/exljbris/museo/900-italic/
  * Copyright: Copyright (c) 2008-2010 by Jos Buivenga/exljbris. All rights reserved.
  * 
  * Webfont: Museo 100 Italic by exljbris
- * URL: http://www.myfonts.com/fonts/exljbris/museo/100-italic/
+ * URL: http://www.myfonts.com/www/fonts/exljbris/museo/100-italic/
  * Copyright: Copyright (c) 2008-2010 by Jos Buivenga/exljbris. All rights reserved.
  * 
  * Webfont: Museo 500 Italic by exljbris
- * URL: http://www.myfonts.com/fonts/exljbris/museo/500-italic/
+ * URL: http://www.myfonts.com/www/fonts/exljbris/museo/500-italic/
  * Copyright: Copyright (c) 2008-2010 by Jos Buivenga/exljbris. All rights reserved.
  * 
  * Webfont: Museo 700 Italic by exljbris
- * URL: http://www.myfonts.com/fonts/exljbris/museo/700-italic/
+ * URL: http://www.myfonts.com/www/fonts/exljbris/museo/700-italic/
  * Copyright: Copyright (c) 2008-2010 by Jos Buivenga/exljbris. All rights reserved.
  * 
  * 
@@ -60,32 +60,32 @@
 @import url("//hello.myfonts.net/count/2ab266");
 
   
-@font-face {font-family: 'Museo-900';src: url('/fonts/museo/2AB266_0_0.eot');src: url('/fonts/museo/2AB266_0_0.eot?#iefix') format('embedded-opentype'),url('/fonts/museo/2AB266_0_0.woff') format('woff'),url('/fonts/museo/2AB266_0_0.ttf') format('truetype');}
+@font-face {font-family: 'Museo-900';src: url('/www/fonts/museo/2AB266_0_0.eot');src: url('/www/fonts/museo/2AB266_0_0.eot?#iefix') format('embedded-opentype'),url('/www/fonts/museo/2AB266_0_0.woff') format('woff'),url('/www/fonts/museo/2AB266_0_0.ttf') format('truetype');}
  
   
-@font-face {font-family: 'Museo-700';src: url('/fonts/museo/2AB266_1_0.eot');src: url('/fonts/museo/2AB266_1_0.eot?#iefix') format('embedded-opentype'),url('/fonts/museo/2AB266_1_0.woff') format('woff'),url('/fonts/museo/2AB266_1_0.ttf') format('truetype');}
+@font-face {font-family: 'Museo-700';src: url('/www/fonts/museo/2AB266_1_0.eot');src: url('/www/fonts/museo/2AB266_1_0.eot?#iefix') format('embedded-opentype'),url('/www/fonts/museo/2AB266_1_0.woff') format('woff'),url('/www/fonts/museo/2AB266_1_0.ttf') format('truetype');}
  
   
-@font-face {font-family: 'Museo-300';src: url('/fonts/museo/2AB266_2_0.eot');src: url('/fonts/museo/2AB266_2_0.eot?#iefix') format('embedded-opentype'),url('/fonts/museo/2AB266_2_0.woff') format('woff'),url('/fonts/museo/2AB266_2_0.ttf') format('truetype');}
+@font-face {font-family: 'Museo-300';src: url('/www/fonts/museo/2AB266_2_0.eot');src: url('/www/fonts/museo/2AB266_2_0.eot?#iefix') format('embedded-opentype'),url('/www/fonts/museo/2AB266_2_0.woff') format('woff'),url('/www/fonts/museo/2AB266_2_0.ttf') format('truetype');}
  
   
-@font-face {font-family: 'Museo-100';src: url('/fonts/museo/2AB266_3_0.eot');src: url('/fonts/museo/2AB266_3_0.eot?#iefix') format('embedded-opentype'),url('/fonts/museo/2AB266_3_0.woff') format('woff'),url('/fonts/museo/2AB266_3_0.ttf') format('truetype');}
+@font-face {font-family: 'Museo-100';src: url('/www/fonts/museo/2AB266_3_0.eot');src: url('/www/fonts/museo/2AB266_3_0.eot?#iefix') format('embedded-opentype'),url('/www/fonts/museo/2AB266_3_0.woff') format('woff'),url('/www/fonts/museo/2AB266_3_0.ttf') format('truetype');}
  
   
-@font-face {font-family: 'Museo-500';src: url('/fonts/museo/2AB266_4_0.eot');src: url('/fonts/museo/2AB266_4_0.eot?#iefix') format('embedded-opentype'),url('/fonts/museo/2AB266_4_0.woff') format('woff'),url('/fonts/museo/2AB266_4_0.ttf') format('truetype');}
+@font-face {font-family: 'Museo-500';src: url('/www/fonts/museo/2AB266_4_0.eot');src: url('/www/fonts/museo/2AB266_4_0.eot?#iefix') format('embedded-opentype'),url('/www/fonts/museo/2AB266_4_0.woff') format('woff'),url('/www/fonts/museo/2AB266_4_0.ttf') format('truetype');}
  
   
-@font-face {font-family: 'Museo-300Italic';src: url('/fonts/museo/2AB266_5_0.eot');src: url('/fonts/museo/2AB266_5_0.eot?#iefix') format('embedded-opentype'),url('/fonts/museo/2AB266_5_0.woff') format('woff'),url('/fonts/museo/2AB266_5_0.ttf') format('truetype');}
+@font-face {font-family: 'Museo-300Italic';src: url('/www/fonts/museo/2AB266_5_0.eot');src: url('/www/fonts/museo/2AB266_5_0.eot?#iefix') format('embedded-opentype'),url('/www/fonts/museo/2AB266_5_0.woff') format('woff'),url('/www/fonts/museo/2AB266_5_0.ttf') format('truetype');}
  
   
-@font-face {font-family: 'Museo-900Italic';src: url('/fonts/museo/2AB266_6_0.eot');src: url('/fonts/museo/2AB266_6_0.eot?#iefix') format('embedded-opentype'),url('/fonts/museo/2AB266_6_0.woff') format('woff'),url('/fonts/museo/2AB266_6_0.ttf') format('truetype');}
+@font-face {font-family: 'Museo-900Italic';src: url('/www/fonts/museo/2AB266_6_0.eot');src: url('/www/fonts/museo/2AB266_6_0.eot?#iefix') format('embedded-opentype'),url('/www/fonts/museo/2AB266_6_0.woff') format('woff'),url('/www/fonts/museo/2AB266_6_0.ttf') format('truetype');}
  
   
-@font-face {font-family: 'Museo-100Italic';src: url('/fonts/museo/2AB266_7_0.eot');src: url('/fonts/museo/2AB266_7_0.eot?#iefix') format('embedded-opentype'),url('/fonts/museo/2AB266_7_0.woff') format('woff'),url('/fonts/museo/2AB266_7_0.ttf') format('truetype');}
+@font-face {font-family: 'Museo-100Italic';src: url('/www/fonts/museo/2AB266_7_0.eot');src: url('/www/fonts/museo/2AB266_7_0.eot?#iefix') format('embedded-opentype'),url('/www/fonts/museo/2AB266_7_0.woff') format('woff'),url('/www/fonts/museo/2AB266_7_0.ttf') format('truetype');}
  
   
-@font-face {font-family: 'Museo-500Italic';src: url('/fonts/museo/2AB266_8_0.eot');src: url('/fonts/museo/2AB266_8_0.eot?#iefix') format('embedded-opentype'),url('/fonts/museo/2AB266_8_0.woff') format('woff'),url('/fonts/museo/2AB266_8_0.ttf') format('truetype');}
+@font-face {font-family: 'Museo-500Italic';src: url('/www/fonts/museo/2AB266_8_0.eot');src: url('/www/fonts/museo/2AB266_8_0.eot?#iefix') format('embedded-opentype'),url('/www/fonts/museo/2AB266_8_0.woff') format('woff'),url('/www/fonts/museo/2AB266_8_0.ttf') format('truetype');}
  
   
-@font-face {font-family: 'Museo-700Italic';src: url('/fonts/museo/2AB266_9_0.eot');src: url('/fonts/museo/2AB266_9_0.eot?#iefix') format('embedded-opentype'),url('/fonts/museo/2AB266_9_0.woff') format('woff'),url('/fonts/museo/2AB266_9_0.ttf') format('truetype');}
+@font-face {font-family: 'Museo-700Italic';src: url('/www/fonts/museo/2AB266_9_0.eot');src: url('/www/fonts/museo/2AB266_9_0.eot?#iefix') format('embedded-opentype'),url('/www/fonts/museo/2AB266_9_0.woff') format('woff'),url('/www/fonts/museo/2AB266_9_0.ttf') format('truetype');}
  
