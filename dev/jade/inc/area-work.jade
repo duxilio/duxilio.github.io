@@ -1,32 +1,21 @@
-.container
-    +star-sky
-    .rocket
-        img(src="/img/rocket.svg")
+.bg-ani
+    .container
+        //-+star-sky
+        .rocket-wrapper
+            .rocket
+                img(src="/img/rocket.svg")
+            //- .rocket-wrapper__smoke-left
+            //-     - for(var i = 0; i < 8; i++)
+            //-         .rocket-wrapper__smoke-left__part
+            .rocket-wrapper__smoke-right
+                - for(var i = 0; i < 4; i++)
+                    .rocket-wrapper__smoke-right__part
 
 .clouds.clouds--top
 .push-area.push-area--alt
+    .title-block
+        h3 Our Products
     .container.text-left
-        .col.col--two-third
-            .socialhack-logo
-                img(src="/img/socialhack-logo.svg")
-            h3.h6 
-                b Featured Project
-            p
-                | SocialHack lets you
-                b  connect with other developers near you.
-                br
-                |  Find out what you have in common and go over to have a chat.
-
-            //a.btn Coming Soon
-            p Be the first to know when we release
-            form(action="#" method="post")#email-form
-                .input-wrapper
-                    input#email-input(name="email" type="email" placeholder="dannycrane@gmail.com" onclick="ga('send', 'event', 'SocialHack', 'focus', 'input');" required).input-wrapper__input
-                    span.input-wrapper__icon-wrapper.ss-icon.ss-standard#email-send-btn
-                        span.input-wrapper__icon-wrapper__icon
-
-        .col.col--one-third
-            .iphone
-                img(src="/img/socialhack-iphone.png")
+        include slider
 
 .clouds.clouds--bottom

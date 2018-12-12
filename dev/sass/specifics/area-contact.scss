@@ -1,5 +1,11 @@
 .area-about {
-    padding-bottom: 0
+    padding-top: 100px;
+    //padding-bottom: 0;
+
+    .container {
+        position: relative;
+        z-index: 2;
+    }
 }
 
 .area-contact-bg {
@@ -14,6 +20,7 @@
     background-image: url('/img/duxilio-moon.svg');
     background-repeat: no-repeat;
     background-position: bottom left;
+    background-color: $bg-color;
 
     z-index: -1;
 }
@@ -30,6 +37,7 @@
     .container {
         position: relative;
         top: 300px;
+        z-index: 2;
     }
 
     ul.bullets li {

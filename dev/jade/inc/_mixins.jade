@@ -1,5 +1,6 @@
-mixin star-sky
-    .star-sky
+mixin star-sky(animated)
+    - var extraClass = animated ? ' star-sky--animated' : '';
+    div(class="star-sky#{extraClass}")
         - var rand = function(min, max){ return Math.floor((Math.random() * max) + min); };
         - for(var i = 0; i < 15; i++)
             - var size = rand(10, 20);

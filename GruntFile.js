@@ -10,9 +10,9 @@ module.exports = function (grunt){
         server: {
             options: {
                 livereload: true,
-                hostname: '127.0.0.1',
+                hostname: '0.0.0.0',
                 port: 9000,
-                base: './'
+                base: '<%= webRoot %>/'
             }
         }
     },
@@ -27,7 +27,7 @@ module.exports = function (grunt){
         },
         js: {
             files: ['<%= devRoot %>/js/**/*.js'],
-            tasks: ['jshint', 'concat']
+            tasks: ['jshint', 'concat', 'uglify']
         },
         sass: {
             files: ['<%= devRoot %>/sass/**/*.scss'],

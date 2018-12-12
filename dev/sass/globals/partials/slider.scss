@@ -1,0 +1,62 @@
+.slider {
+	width: 100%;
+	height: 440px;
+	position: relative;
+
+	&__nav {
+		a {
+			position: absolute;
+			top: 50%;
+			left: -3em;
+			z-index: 1;
+			
+			margin-top: -1em;
+			font-size: 2em;
+
+			cursor: pointer;
+			color: $bg-color;
+			opacity: .3;
+		}
+
+		.slider__nav__item--right {
+			right: -3em;
+			left: auto;
+		}
+	}
+
+	&__slide {
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: 0;
+		bottom: 0;
+
+		display: none;
+
+		.col--two-third, .iphone img {
+			@include transition(all, $duration: .5s);
+		}
+
+		.col--two-third {
+			opacity: 0;
+		}
+		.iphone img {
+			position: relative;
+			transform: translateY(440px);
+		}
+
+		&.slider__slide--block {
+			display: block;
+		}
+
+		&.slider__slide--visible {
+			.col--two-third {
+				opacity: 1;
+			}
+			.iphone img {
+				transform: translateY(0);
+			}
+		}
+	}
+
+}

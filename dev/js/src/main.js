@@ -9,8 +9,10 @@
     //email
     (function(){
 
-        var emailForm = _gebi('email-form'),
-            emailInput = _gebi('email-input'),
+        var emailForm = _gebi('email-form');
+        if(!emailForm) return;
+
+        var emailInput = _gebi('email-input'),
             sendBtn = _gebi('email-send-btn'),
 
             BsendBtn = B(sendBtn),

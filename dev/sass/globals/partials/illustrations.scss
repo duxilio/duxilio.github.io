@@ -1,4 +1,4 @@
-.logo, .socialhack-logo {
+.logo, .brand-logo {
     max-width: 110px;
 
     img {
@@ -14,8 +14,8 @@
     }
 }
 
-.socialhack-logo {
-    max-width: 240px;
+.brand-logo {
+    max-width: 200px;
     margin-bottom: $margin-s;
 }
 
@@ -33,9 +33,10 @@
         background-image: url('/img/clouds/clouds-iphone-overlay.svg');
 
         position: absolute;
-        bottom: 0;
+        bottom: -1px;
         left: 0;
         right: 0;
+        z-index: 1;
     }
 }
 

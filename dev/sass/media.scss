@@ -1,12 +1,16 @@
 //mobile
-@include media($max-width: 768px){
-
+@include media($max-width: 767px){
     .container {
         width: 90%;
     }
 
     .col.col--one-third, .col.col--two-third {
         @include column(12);
+    }
+
+    .area-about {
+        padding: 0;
+        padding-top: $margin-xl;
     }
 
     .iphone {
@@ -72,19 +76,64 @@
         margin-left: -950px;
     }
 
+    .slider {
+        height: 760px;
+
+        .slider__nav {
+            position: absolute;
+            top: 50px;
+            right: 80px;
+        }
+
+        .slider__nav__item {
+            left: 0;
+
+            &.slider__nav__item--right {
+                right: 0;
+                left: 40px;
+            }
+        }
+    }
+
 }
 
 //tablet
-@include media(768px, 960px){
-
+@include media(767px, 960px){
     .container {
         width: 750px;
     }
 
+    .area-about {
+        padding: 0;
+        padding-top: $margin-xl;
+    }
 
-    .iphone {
-        &:before {
-            bottom: -10px;
+    .slider {
+        height: 420px;
+
+        .slider__slide {
+            right: 30px;
+            left: 30px;
+        }
+
+        .container {
+            width: 700px;
+        }
+
+        .slider__nav__item {
+            left: 0;
+
+            &.slider__nav__item--right {
+                right: 0;
+                left: auto;
+            }
+        }
+
+        .iphone {
+            &:before {
+                bottom: -16px;
+            }
         }
     }
+
 }

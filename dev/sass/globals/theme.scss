@@ -9,7 +9,11 @@
     left: 50%;
     right: 0;
     bottom: 0;
-    z-index: -1;
+
+    z-index: 1;
+
+    height: 700px;
+    transform-origin: 100%;
 
     overflow: hidden;
     margin-left: -480px;
@@ -20,6 +24,103 @@
         position: absolute;
         background: radial-gradient(rgba(255,255,255,1), transparent 2px, transparent 80px);
     }
+}
+
+.star-sky.star-sky--animated .star {
+    animation: star-ani 6s infinite linear;
+}
+
+.rocket {
+    animation: rocket-shake .2s infinite alternate linear;
+    position: relative;
+    z-index: 2;
+}
+
+.rocket-wrapper {
+    position: relative;
+    animation: rocket-fly 15s infinite ease;
+
+    &__smoke-right, &__smoke-left {
+        position: absolute;
+        left: 50%;
+        margin-left: -75px;
+
+        animation: smoke-right-ani .3s infinite linear;
+
+        &__part {
+            width: 30px;
+            height: 30px;
+            background-color: white;
+            border-radius: 100%;
+
+            position: absolute;
+            left: 15px;
+            animation: rocket-shake .2s infinite alternate linear;
+
+            &:nth-child(2){
+                top: 20px;
+            }
+            &:nth-child(3){
+                top: 40px;
+            }
+            &:nth-child(4){
+                top: 60px;
+            }
+        }
+    }
+
+    &__smoke-left {
+        left: 50%;
+        margin-top: -20px;
+        margin-left: -43px;
+        animation: smoke-left-ani .6s infinite linear;
+        //animation: none;
+
+        &__part {
+            &:nth-child(1){
+                left: -14px;
+                top: 10px;
+            }
+            &:nth-child(2){
+                left: -24px;
+                top: 25px;
+            }
+            &:nth-child(3){
+                left: -34px;
+                top: 40px;
+            }
+            &:nth-child(4){
+                left: -42px;
+                top: 50px;
+            }
+            &:nth-child(5){
+                left: -57px;
+                top: 66px;
+            }
+            &:nth-child(6){
+                left: -70px;
+                top: 76px;
+            }
+            &:nth-child(6){
+                left: -80px;
+                top: 86px;
+            }
+            &:nth-child(7){
+                left: -90px;
+                top: 96px;
+            }
+            &:nth-child(8){
+                left: -100px;
+                top: 106px;
+            }
+        }
+    }
+}
+
+.bg-ani {
+    animation: bg-ani 15s infinite ease;   
+    position: relative;
+    z-index: -1;
 }
 
 .row {
@@ -37,4 +138,61 @@
 
 .push-area.area-contact {
     padding-bottom: $margin-l;
+}
+
+@keyframes smoke-left-ani {
+    from {
+        transform: translate(0);
+    }
+    to {
+        transform: translate(-100px, 100px);
+    }
+}
+
+@keyframes smoke-right-ani {
+    from {
+        transform: translate(0, 0);
+    }
+    to {
+        transform: translate(0, 20px);
+    }
+}
+
+@keyframes star-ani {
+    from {
+        transform: translate(500px, -1000px);
+    }
+    to {
+        transform: translate(-500px, 500px);
+    }
+}
+
+@keyframes rocket-shake {
+    from {
+        transform: translate(0);
+    }
+    to {
+        transform: translate(1px, 1px);
+    }
+}
+
+@keyframes rocket-fly {
+    0%, 10%, 100% {
+        transform: translate(0);
+    }
+    30%, 80% {
+        transform: translate(20px, -10px);
+    }
+    40%, 90% {
+        transform: translate(40px, -20px);
+    }
+}
+
+@keyframes bg-ani {
+    0%, 20%, 100% {
+        background-color: $bg-color;
+    }
+    30%, 90% {
+        background-color: darken($bg-color, 3%);
+    }
 }

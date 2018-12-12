@@ -1,4 +1,5 @@
 a.btn {
+	font-size: $size-s;
     padding: $margin-s $margin-m;
 
     color: $white;
@@ -6,4 +7,10 @@ a.btn {
 
     border-radius: $border-radius;
     display: inline-block;
+
+    @include transition(background-color);
+
+    &:hover {
+    	background-color: darken($brand-blue-dark, 2%);
+    }
 }

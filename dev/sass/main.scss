@@ -15,8 +15,14 @@
 @import "globals/partials/illustrations";
 @import "globals/partials/profile-item";
 @import "globals/partials/input-wrapper";
+@import "globals/partials/slider";
 
 @import "specifics/area-intro";
 @import "specifics/area-contact";
 
-@import "media"
+@import "media";
+
+//fonts
+@import "vendor/fonts/museo";
+@import "vendor/fonts/ss-social-regular";
+@import "vendor/fonts/ss-pika";
