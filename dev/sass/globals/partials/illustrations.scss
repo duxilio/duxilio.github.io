@@ -30,7 +30,7 @@
     &:before {
         content: '';
         height: 117px;
-        background-image: url('/img/clouds/clouds-iphone-overlay.svg');
+        background-image: url('/www/img/clouds/clouds-iphone-overlay.svg');
 
         position: absolute;
         bottom: -1px;
@@ -72,20 +72,20 @@
     }
 
     &.clouds--top {
-        background: url('/img/clouds/clouds-top.svg');
+        background: url('/www/img/clouds/clouds-top.svg');
 
         &:before {
-            background: url('/img/clouds/clouds-top.svg');
+            background: url('/www/img/clouds/clouds-top.svg');
             background-position: 310px 0;
         }
     }
 
     &.clouds--bottom {
-        background: url('/img/clouds/clouds-btm.svg');
+        background: url('/www/img/clouds/clouds-btm.svg');
         background-position: 400px 0;
 
         &:before {
-            background: url('/img/clouds/clouds-btm.svg');
+            background: url('/www/img/clouds/clouds-btm.svg');
             height: 80px;
             top: auto;
         }
