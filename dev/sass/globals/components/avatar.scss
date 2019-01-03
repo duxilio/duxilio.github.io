@@ -4,7 +4,7 @@
     border-radius: 100%;
 
     background-color: $white;
-    @include border($border-width: 6px, $color: $gray-light);
+    @include border($border-width: 3px, $color: $gray-light);
     overflow: hidden;
 
     img {
